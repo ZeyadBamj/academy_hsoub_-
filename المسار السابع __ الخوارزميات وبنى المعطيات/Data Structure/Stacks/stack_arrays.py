@@ -1,5 +1,3 @@
-from sys import maxsize
-
 def create_stack():
     stack = []
     return stack
@@ -10,8 +8,8 @@ def is_empty(stack):
 
     return False
 
-def push(stacks, item):
-    stacks.append(item)
+def push(stack, item):
+    stack.append(item)
     print(item , 'pushed to Stack')
 
 
@@ -21,12 +19,15 @@ def pop(stack):
 
     return f'{stack.pop()} Deleted from Stack'
 
-stack = create_stack()
-push(stack, 10)
-push(stack, 20)
-push(stack, 30)
-print(pop(stack))
-print(pop(stack))
-print(pop(stack))
-print(pop(stack))
-print(is_empty(stack))
+
+
+stacks = create_stack()
+push(stacks, 10)
+push(stacks, 20)
+push(stacks, 30)
+# print(pop(stacks))
+# print(pop(stacks))
+# print(pop(stacks))
+# print(pop(stacks))
+print(is_empty(stacks))
+print(stacks)
