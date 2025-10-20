@@ -4,12 +4,12 @@ let row = parseInt(prompt('Enter a Number'));
 for (let i = 1; i <= row; i++) {
     let upStars = '';
     for (let j = 1; j <= row - i; j++) {
-        upStars += ' '; // space 
+        upStars += ' '; 
     }
     for (let uS = 1; uS <= (2 * i - 1); uS++) {
-        upStars += '*'; // star
+        upStars += '*'; 
     }
-    console.log(upStars); // print stars with space of it
+    console.log(upStars); 
 }
 
 for (let i = row - 1; i >= 1; i--) {
